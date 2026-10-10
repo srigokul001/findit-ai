@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "FindIt AI – Smart Lost & Found Matcher for Campus & Community",
   "scripts": {
+    "start": "node server/server.js",
+    "build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
     "server": "node server/server.js",
     "client": "npm --prefix client run dev",
     "seed": "node server/seed.js",
-    "build": "npm --prefix client run build",
     "dev": "node start-dev.js"
   },
   "keywords": ["lost-and-found", "ai-matching", "campus", "react", "express", "mongodb"],
